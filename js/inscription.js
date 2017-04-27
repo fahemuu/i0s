@@ -1,6 +1,3 @@
-
-
-
 // Loading Page
 
 const loading = document.getElementById("blank");
@@ -21,9 +18,9 @@ const header = document.getElementById("header");
 const logo = document.getElementById("logo");
 var container = document.getElementsByClassName("container");
 
-function scrolled(){
+function scrolled() {
     console.log(container[0].offsetTop)
-	if (document.body.scrollTop > container[0].offsetTop || document.documentElement.scrollTop > container[0].offsetTop) {
+    if (document.body.scrollTop > container[0].offsetTop || document.documentElement.scrollTop > container[0].offsetTop) {
         header.className = "fixed";
         logo.className = "fixed";
 
@@ -31,15 +28,14 @@ function scrolled(){
         slash[1].style.backgroundColor = "#FF553B";
         slash[2].style.backgroundColor = "#FF1E26";
 
-    }
-    else {
+    } else {
         header.className = "";
         logo.className = "";
 
         slash[0].style.backgroundColor = "white";
         slash[1].style.backgroundColor = "white";
         slash[2].style.backgroundColor = "white";
-    }    
+    }
 }
 
 addEventListener("scroll", scrolled, false);
@@ -91,9 +87,7 @@ function animMenu() {
 
         logoNav.style.opacity = 1;
         logoNav.style.paddingBottom = "0";
-    }
-
-    else {
+    } else {
 
         nav.style.right = "100%";
         slash[1].style.opacity = 1;
@@ -157,8 +151,7 @@ document.getElementById("submit").onclick = function click() {
 
     if (checking() == nbQuestions) {
         answerAll();
-    }
-    else {
+    } else {
         document.getElementById("submit").innerHTML = "Incomplet";
     }
 };
@@ -240,7 +233,7 @@ var progressBar = document.getElementById("myBar");
  */
 
 document.getElementById("form").onchange = function () {
-    var radioChecked = checking();// on stock le resultat de la fonction pour eviter de l'appeler plusieurs fois
+    var radioChecked = checking(); // on stock le resultat de la fonction pour eviter de l'appeler plusieurs fois
 
 
     //si tout les champs sont remplis on active le boutton valider , 
@@ -256,11 +249,11 @@ document.getElementById("form").onchange = function () {
     progressBar.style.width =
         (
             Math.floor // Math.floor  pour enlever avoir des chiffres ronds cad sans virgules ...
-                (
+            (
                 (radioChecked * 100) / nbQuestions // on calcule le pourcentage des questions  repondu par rapport au nombre de questions total 
-                )
-        )
-        + "%"; // <== faut pas l'oublier lui
+            )
+        ) +
+        "%"; // <== faut pas l'oublier lui
 
     //On change bien évidament le chiffre qui est dans la barre de progression par la width fraichement affecter
     progressBar.innerHTML = progressBar.style.width
@@ -278,41 +271,54 @@ document.getElementById("form").onchange = function () {
 
 
 
-(function ()
-{
+(function () {
     ///// declaration de variables///
 
-    const myForm = document.getElementById('inscription');
-    const inputsOblig = document.getElementsByClassName('oblig'); //les inputs obligatoire 
-    const newLine = escape("\n");                                 // un retour a la ligne
-    const btInscrip = document.getElementById("btInscrip");
+    var myForm = document.getElementById('inscription');
+    var inputsOblig = document.getElementsByClassName('oblig'); //les inputs obligatoire 
+    var newLine = escape("\n"); // un retour a la ligne
+    var btInscrip = document.getElementById("btInscrip");
+    var glyphicon = document.getElementsByClassName("glyphicon")
+
+
+
+
+
     var mail = '' // adresse mail
     var subject = ''
     var my_body = ''
 
 
-    //////////////////////////////////////////////
+    /////////////////////////////////////////////
+  
+    function check(list) {
+        var is = true;
 
 
-    function check(list)
-    {
-        for (var i = 0; i < list.length; i++)
-        {
-            if (list[i].value == "")            
-            {
-                return false;
+        for (var i = 0; i < list.length; i++) {
+            list[i].style.borderColor = "#3cb878";
+            glyphicon[i].style.color ="#3cb878";
+
+            if (!list[i].checkValidity()) {
+                glyphicon[i].style.color ="red";
+                list[i].style.animationPlayState = "running";
+                list[i].style.borderColor = "red";
+
+                is = false;
             }
-        }
-        return true;
 
+        }
+
+        return is;
     }
-    function construireMail()
-    {
-        debugger
+
+
+    function construireMail() {
+
         //INITIALISATIONS
         mail = 'mailto:justine@wildcodeschool.fr';
         subject = "subject=Inscription formation Swift/iOS_" + document.getElementById("iNnom").value
-        my_body = document.getElementById("content").value
+        my_body = escape(document.getElementById("content").value)
         var str = ""
         var myName = document.getElementById("iNnom").value
         var urlG = document.getElementById("urlG").value
@@ -320,38 +326,36 @@ document.getElementById("form").onchange = function () {
         var tel = document.getElementById("tel").value
         var myMail = document.getElementById("mail").value
         //CONSTRUCTION DE LA CHAINE DE CARACTÈRE
-        str = mail
-            + "?" + subject
-            + "&body=" + "Hello, je souhaite suivre la formation intensive Swift / iOS. " + newLine
-            + my_body + newLine
+        str = mail +
+            "?" + subject +
+            "&body=" + escape("Hello, je souhaite suivre la formation intensive Swift / iOS. ") + newLine +
+            my_body + newLine
 
 
         // console.log(str)
-        if (urlG != "" || urlk != "")
-        {
-            str = str
-                + "Voici mon profil GitHub et/ou Linkedin :" + newLine
-                + urlG + newLine
-                + urlk + newLine
+        if (urlG != "" || urlk != "") {
+            str = str +
+                "Voici mon profil GitHub et/ou Linkedin :" + newLine +
+                urlG + newLine +
+                urlk + newLine
         }
-        str = str + newLine + newLine+ myName + newLine +"Tel  : "+ tel + newLine + "Email  : "+myMail + newLine
+        str = str + newLine + newLine + myName + newLine + "Tel  : " + tel + newLine + "Email  : " + myMail + newLine
         console.log(str)
         return str;
     }
 
     btInscrip.addEventListener("click",
-        function (e) 
-        {
+        function (e) {
+
             // console.log("click inscription")
             var a = document.createElement('a');
             // console.log(construireMail())
-            a.href = construireMail()
-            // console.log(a.href)
-            if (check(inputsOblig))
-            {
-                a.click();
-                window.location.href = '#close';
 
+            a.setAttribute("href", construireMail());
+
+            if (check(inputsOblig)) {
+                document.location = a
+                window.location.href = '#close';
                 e.preventDefault();
             }
 

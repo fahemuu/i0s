@@ -1,222 +1,207 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
-
     margin: 0;
     padding: 0;
-
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-
-
-
-
-
 @media screen and (max-device-width: 1024px) {
+
+    #insription {
+        width: 90% !important;
+        height: 90% !important;
+        margin: 10% auto;
+        padding: 10%;
+        border-radius: 10px;
+        background: #fff;
+        background: -moz-linear-gradient(#fff, #999);
+        background: -webkit-linear-gradient(#fff, #999);
+        background: -o-linear-gradient(#fff, #999);
+    }
 
     .question {
         font-weight: bolder;
         font-size: 1.5vw !important;
     }
-
     label {
         font-size: 13px !important;
     }
-
     .ques {
         margin-top: 10px !important;
         height: 22px !important;
         width: 22px !important;
     }
-
     #titre {
         letter-spacing: 0.4vw !important;
         font-size: 5vw !important;
     }
-
     #nav {
         width: 100% !important;
     }
-
     #formulaire {
         width: 85% !important;
     }
-
     #form {
         height: 65em !important;
     }
-
     #btnCont {
         bottom: 14% !important;
     }
-
     #submit {
         font-size: 3vw !important;
     }
-
     #myBar {
         font-size: 3vw !important;
         height: auto !important;
     }
-
     #btninscription {
         font-size: 4vw !important;
         padding: 20px 30px !important;
         border-radius: 20px !important;
     }
-
     #copyright {
         font-size: 2vw !important;
     }
-
     .graph {
         height: 35vh !important;
     }
 }
 
 @media screen and (max-width: 1024px) {
-
+    
     #cover {
         height: 40% !important;
     }
-
     #nav {
         width: 100% !important;
     }
-
     #formulaire {
         width: 85% !important;
     }
-
     #btnCont {
         bottom: 12% !important;
     }
-
     #submit {
         font-size: 3vw !important;
     }
-
     #myBar {
         font-size: 3vw !important;
         height: auto !important;
     }
-
     #btninscription {
         font-size: 3vw !important;
         padding: 10px 20px !important;
         border-radius: 10px !important;
     }
-
     .question {
         font-size: 3vw !important;
     }
-    
     #copyright {
         font-size: 2vw !important;
     }
-
     #logoNav {
-    width: 6em !important;
-    margin:  20px auto auto auto !important;
+        width: 6em !important;
+        margin: 20px auto auto auto !important;
     }
-    
     #logoNavContain {
         height: 25% !important;
     }
-
     .navMenu {
-    text-align: center !important;
-    padding: 10% !important;
-    font-size: 3vw !important;
+        text-align: center !important;
+        padding: 10% !important;
+        font-size: 3vw !important;
     }
-
     .social {
-    width: 4em !important;
-    height: 4em !important;
-    transition: all 0.5s !important;
-    margin: auto !important;
-    border-radius: 70px !important; 
+        width: 4em !important;
+        height: 4em !important;
+        transition: all 0.5s !important;
+        margin: auto !important;
+        border-radius: 70px !important;
     }
-
     .tel:hover {
-    width: 13em !important;
-
+        width: 13em !important;
     }
-
     .tel:hover #num {
-    font-size: 20px !important;
+        font-size: 20px !important;
     }
-
-    ul > a:before {
-    width: 20% !important;
-    margin-left: 15% !important;
-    margin-top: 12% !important;
+    ul>a:before {
+        width: 20% !important;
+        margin-left: 15% !important;
+        margin-top: 12% !important;
     }
-        
     .graph {
         height: 35vh !important;
     }
-
 }
 
 @media screen and (min-device-width: 610px) and (max-device-width: 1024px) {
-
+    .modalDialog#insription {
+        width: 90%;
+        height: 90%;
+        margin: 10% auto;
+        padding: 10%;
+        border-radius: 10px;
+        background: #fff;
+        background: -moz-linear-gradient(#fff, #999);
+        background: -webkit-linear-gradient(#fff, #999);
+        background: -o-linear-gradient(#fff, #999);
+    }
     #cover {
         height: 35% !important;
     }
-
     #logoNav {
         width: 8em !important;
         margin: auto !important;
     }
-
 }
 
 @media screen and (max-device-width: 610px) {
 
+   #insription {
+        width: 90% !important;
+        height: 90% !important;
+        margin: 10% auto;
+        padding: 10%;
+        border-radius: 10px;
+        background: #fff;
+        background: -moz-linear-gradient(#fff, #999);
+        background: -webkit-linear-gradient(#fff, #999);
+        background: -o-linear-gradient(#fff, #999);
+    }
+
+  
     #cover {
         height: 20% !important;
     }
-
     #logoNav {
-    width: 18em !important;
-    margin: auto !important;
+        width: 18em !important;
+        margin: auto !important;
     }
-
     .navMenu {
-    text-align: center !important;
-    padding: 10% !important;
-    font-size: 6vw !important;
+        text-align: center !important;
+        padding: 10% !important;
+        font-size: 6vw !important;
     }
-
     .social {
-    width: 8em !important;
-    height: 8em !important;
-    transition: all 0.5s !important;
-    margin: auto !important;
-    border-radius: 70px !important; 
+        width: 8em !important;
+        height: 8em !important;
+        transition: all 0.5s !important;
+        margin: auto !important;
+        border-radius: 70px !important;
     }
-
     .tel:hover {
-    width: 20em !important;
-
+        width: 20em !important;
     }
-
     .tel:hover #num {
-    font-size: 28px !important;
+        font-size: 28px !important;
     }
-
-
 }
 
 
 /* Loading Page */
-
-
-
 
 #blank {
     width: 100%;
@@ -244,25 +229,61 @@ html, body {
     animation: spin 10s linear infinite;
 }
 
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/********************
+*Animations Divers
+*
+*/
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
 
 
+/*Annimer le boutton inscription*/
 
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    85% {
+        transform: rotate(2deg);
+    }
+    95% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
 
 /* Header */
 
-
-
-
 #logo {
-    background-size: contain; 
-    background-image: url("../img/logowcs.png"); 
-    position:fixed;
+    background-size: contain;
+    background-image: url("../img/logowcs.png");
+    position: fixed;
     top: 1em;
-    right: 2em;   
+    right: 2em;
     width: 4em;
     height: 4em;
     z-index: 3;
@@ -271,14 +292,13 @@ html, body {
 }
 
 #logo.fixed {
-    background-image: url("../img/logowcsfixed.png"); 
+    background-image: url("../img/logowcsfixed.png");
 }
-
 
 #header {
     width: 100%;
     height: 0;
-    position:fixed;
+    position: fixed;
     background: white;
     box-shadow: 0 0 10px black;
     z-index: 2;
@@ -291,11 +311,7 @@ html, body {
 }
 
 
-
-
 /* Menu Hamburger */
-
-
 
 #logoNav {
     width: 8em;
@@ -306,11 +322,12 @@ html, body {
 }
 
 #logoNavContain {
-    position: absolute; 
-    height:35%;
-} 
+    position: absolute;
+    height: 35%;
+}
+
 #icon {
-    position:fixed;
+    position: fixed;
     cursor: pointer;
     top: 2em;
     left: 2em;
@@ -320,13 +337,13 @@ html, body {
 
 #nav {
     z-index: 4;
-    right:100%;
-    position:fixed;
+    right: 100%;
+    position: fixed;
     width: 30%;
     height: 100%;
-    background: white ;
+    background: white;
     box-shadow: 0 0 10px black;
-    transition : all 0.6s;
+    transition: all 0.6s;
     display: flex;
 }
 
@@ -337,12 +354,12 @@ ul {
     width: 50%;
 }
 
-ul > a {
+ul>a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-ul > a:before {
+ul>a:before {
     content: "";
     position: absolute;
     width: 30%;
@@ -352,12 +369,12 @@ ul > a:before {
     background: black;
     border-radius: 5px;
     transform: scaleX(0);
-    transition: all 0.4s ;
+    transition: all 0.4s;
 }
 
-ul > a:hover:before,
-ul > a:focus:before {
-  transform: scaleX(1);
+ul>a:hover:before,
+ul>a:focus:before {
+    transform: scaleX(1);
 }
 
 .menuTop {
@@ -371,19 +388,19 @@ ul > a:focus:before {
 }
 
 .slash {
-    opacity : 1;
+    opacity: 1;
     background-color: white;
     width: 50px;
     height: 5px;
-    top : 0px;
-    margin-top:7px;
+    top: 0px;
+    margin-top: 7px;
     border-radius: 50px;
     position: relative;
-    transition : all 0.5s;
+    transition: all 0.5s;
 }
 
 .slash:first-child {
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 .colorSlash {
@@ -413,10 +430,12 @@ ul > a:focus:before {
     height: 4em;
     transition: all 0.5s;
     margin: auto;
-    border-radius: 35px; 
+    border-radius: 35px;
 }
 
-.tel, .twitter, .facebook {
+.tel,
+.twitter,
+.facebook {
     background-color: #555555;
     transition: all 0.5s;
 }
@@ -432,21 +451,19 @@ ul > a:focus:before {
     background-image: url("../img/social-03.png");
     background-size: contain;
     background-repeat: no-repeat;
-    transition: all 1s;  
-    
+    transition: all 1s;
 }
 
 .twitter {
     background-image: url("../img/social-01.png");
     background-size: contain;
     background-repeat: no-repeat;
-    transition: all 1s;  
+    transition: all 1s;
 }
 
 .tel:hover {
     background-color: #222222;
     width: 12em;
-
 }
 
 .twitter:hover {
@@ -473,33 +490,30 @@ ul > a:focus:before {
     opacity: 1;
 }
 
-#social > .right {
-margin-left: 5%;
+#social>.right {
+    margin-left: 5%;
 }
 
-#social > .left {
-margin-right: 5%;
+#social>.left {
+    margin-right: 5%;
 }
 
 
 /* Cover */
 
-
-
 #fond {
-    top:-10%;
+    top: -10%;
     position: fixed;
     width: 100%;
 }
 
 #fondgraph {
-    top:-10%;
-    left:-20%;
+    top: -10%;
+    left: -20%;
     opacity: 0.4;
     position: fixed;
     width: 180%;
 }
-
 
 #cover {
     display: flex;
@@ -518,7 +532,6 @@ margin-right: 5%;
 }
 
 
-
 /* Body */
 
 .orange {
@@ -526,8 +539,7 @@ margin-right: 5%;
 }
 
 #body {
-    background: linear-gradient( white,#fd9d45, #FF1E26);
-
+    background: linear-gradient( white, #fd9d45, #FF1E26);
     box-shadow: 0 0 20px black;
     height: auto;
 }
@@ -535,18 +547,17 @@ margin-right: 5%;
 .white {
     background: white;
     padding-bottom: 3%;
-
 }
 
-.graph{
-    background : url("../img/graph.png") no-repeat center;
+.graph {
+    background: url("../img/graph.png") no-repeat center;
     background-size: cover;
     height: 50vh;
 }
 
 .width {
     width: 100%;
-    display:flex;
+    display: flex;
 }
 
 .container {
@@ -557,39 +568,35 @@ margin-right: 5%;
 #picto {
     width: 10em;
     height: 10em;
-    margin:-5em auto 0 auto;
+    margin: -5em auto 0 auto;
     transition: all 0.3s;
-
 }
 
 #picto:hover {
     width: 11em;
-    margin:-5.5em auto 0 auto;
+    margin: -5.5em auto 0 auto;
     height: 11em;
 }
 
 
-
 /* Questionnaire */
-
-
 
 #sur20 {
     text-align: center;
     transition: all 2s;
     font-size: 3vw;
     font-weight: bolder;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 #formulaire {
     background: white;
     margin: auto;
-    margin-top: 3%; 
+    margin-top: 3%;
     padding: 30px 40px;
     width: 70%;
-    transition : all 1s;
-    border-radius: 10px; 
+    transition: all 1s;
+    border-radius: 10px;
 }
 
 #formulaire:hover {
@@ -613,26 +620,26 @@ margin-right: 5%;
 #submit {
     border: 0px;
     margin: auto;
-    width: auto;;
+    width: auto;
+    ;
     height: auto;
-    margin-top: 20px; 
-    padding: 10px ;
+    margin-top: 20px;
+    padding: 10px;
     background: #3cb878;
     transition: all 200ms;
     color: white;
     font-size: 1vw;
-    border-radius: 5px; 
+    border-radius: 5px;
+}
 
- }
-
- #submit:hover {
+#submit:hover {
     background: #36a86e;
     cursor: pointer;
- }
+}
 
- #submit:focus {
+#submit:focus {
     outline: 0px;
- }
+}
 
 .answer {
     margin: 10px 0 15px 0;
@@ -640,10 +647,10 @@ margin-right: 5%;
     transition: opacity 1s;
     transition: padding 1s;
     border-style: dashed;
-    color : rgb(253, 73, 50);;
+    color: rgb(253, 73, 50);
+    ;
     background: rgba(253, 73, 50, 0.25);
-    border-color:  rgba(253, 73, 50, 0.5);
-
+    border-color: rgba(253, 73, 50, 0.5);
 }
 
 .appear {
@@ -652,32 +659,35 @@ margin-right: 5%;
 }
 
 .good {
-    color : #3cb878 !important;
+    color: #3cb878 !important;
     background: rgba(60, 184, 120, 0.25)!important;
-    border-color:  rgba(60, 184, 120, 0.5)!important;
-    
+    border-color: rgba(60, 184, 120, 0.5)!important;
 }
 
+
 /*Barre de progression */
+
+
 /***********************/
+
 #myBar {
     margin: auto;
     margin-bottom: 20px;
     width: 0%;
     height: 25px;
-    background: linear-gradient( 90deg,#3cb878, #36a86a);
+    background: linear-gradient( 90deg, #3cb878, #36a86a);
     text-align: center;
-    line-height: 25px;  
-    color: white; 
-    border-radius: 5px; 
+    line-height: 25px;
+    color: white;
+    border-radius: 5px;
     transition: width 1s, opacity 2s;
-   
 }
+
+
 /************************/
 
 
 /* Footer */
-
 
 #footer {
     height: 5em;
@@ -687,8 +697,9 @@ margin-right: 5%;
 
 #foot {
     width: 100%;
-    margin-bottom: -1%; 
+    margin-bottom: -1%;
 }
+
 #copyright {
     font-style: italic;
     text-align: center;
@@ -698,102 +709,113 @@ margin-right: 5%;
 
 /* Formulaire */
 
-
- 
 #inscription {
-  margin: auto;
-  padding: 2em;
-  border-radius: 10px;
-  box-shadow: 0 0 10px black;
-  background-color: beige;
+    margin: auto;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    background-color: beige;
 }
 
 @keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
-
-div#lab{
- display: inline-block;
-  margin: auto;
+div#lab {
+    display: inline-block;
+    margin: auto;
 }
+
 
 /*boutton inscription */
+
 #btninscription {
     border: 0px;
     margin: auto;
-    padding:  10px 20px ;
+    padding: 10px 20px;
     background: #3cb878;
     transition: all 200ms;
     color: white;
     font-size: 2vw;
-    border-radius: 5px; 
+    border-radius: 5px;
+}
 
- }
-
- #btninscription:hover {
+#btninscription:hover {
     background: #36a86e;
     cursor: pointer;
- }
+}
 
- #btninscription:focus {
+#btninscription:focus {
     outline: 0px;
- }
-
-.oblig:invalid {
-  background-color: #ffdddd;
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
 }
 
 
-input#iNnom , input#iPren {
-  text-transform: uppercase;
+/*style input invalide */
+
+.oblig {
+    animation: shake 0.9s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    animation-play-state: paused;
 }
-#inscription > input {
+
+input#iNnom,
+input#iPren {
+    text-transform: uppercase;
+}
+
+#inscription input {
     margin: auto;
+    border-color: #cccccc;
+    border: 2px solid;
 }
+
 div#openModal {
     width: 100%;
     height: 100%;
     display: flex;
 }
-#inscription > input:focus, textarea:focus {
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
-  border: 2px solid rgba(81, 203, 238, 1);
-  background-color:whitesmoke ;
-}
-#inscription > input, textarea {
-background-color:whitesmoke ;
-  transition: all 0.30s ease-in-out;
-  outline: none;
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
+
+#inscription textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 2px solid rgba(81, 203, 238, 1);
 }
 
+#inscription input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 2px solid rgba(81, 203, 238, 1);
+}
 
-
+#inscription input,
+textarea {
+    border-radius: 5px;
+    transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+}
 
 
 /*    Pour la fenetre modale    */
+
+
 /********************************/
 
 .modalDialog {
@@ -803,9 +825,9 @@ background-color:whitesmoke ;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 99999;
-    opacity:0;
+    opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 200ms ease-in;
@@ -813,11 +835,11 @@ background-color:whitesmoke ;
 }
 
 .modalDialog:target {
-    opacity:1;
+    opacity: 1;
     pointer-events: auto;
 }
 
-.modalDialog > div {
+.modalDialog>div {
     width: 400px;
     position: relative;
     margin: 10% auto;
@@ -831,44 +853,79 @@ background-color:whitesmoke ;
 
 .close {
     border: 0px;
-    margin-top: 20px; 
-    padding: 10px ;
+    margin-top: 20px;
+    padding: 10px;
     background: #FF1E26;
     text-decoration: none;
     transition: all 200ms;
     color: white;
     font-size: 1vw;
-    border-radius: 5px; 
+    border-radius: 5px;
+}
 
- }
-
- .close:hover {
+.close:hover {
     background: #C9181E;
     cursor: pointer;
- }
+}
 
- .close:focus {
+.close:focus {
     outline: 0px;
- }
+}
 
- #btInscrip {
+#btInscrip {
     margin-right: 10px;
     border: 0px;
-    margin-top: 20px; 
-    padding: 10px ;
+    margin-top: 20px;
+    padding: 10px;
     background: #3cb878;
     transition: all 200ms;
     color: white;
     font-size: 1vw;
-    border-radius: 5px; 
+    border-radius: 5px;
+}
 
- }
-
- #btInscrip:hover {
+#btInscrip:hover {
     background: #36a86e;
     cursor: pointer;
- }
+}
 
- #btInscrip:focus {
+#btInscrip:focus {
     outline: 0px;
- }
+}
+
+
+/*c'est pour les petites icons du formulaire!!! */
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-user:before {
+    content: "\e008";
+}
+
+.glyphicon-envelope:before {
+    content: "\2709";
+}
+
+.glyphicon-earphone:before {
+    content: "\e182";
+}
+
+.glyphicon-globe:before {
+    content: "\e135";
+}
